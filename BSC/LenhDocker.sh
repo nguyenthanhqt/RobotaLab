@@ -1,0 +1,1 @@
+BienA=`ssh abc@$dmz01 docker ps --no-trunc | grep agent | awk -F @ '{printf $2}' | awk '{printf $1}'`
