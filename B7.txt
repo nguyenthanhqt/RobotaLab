@@ -1,0 +1,49 @@
+ssh root@103.89.85.42 -p 2211 # centos
+ssh root@103.89.85.42 -p 2222 # ubunto
+
+chạy foround
+vd: ping -c 200 8.8.8.8 (Mặc định)
+
+chạy back rownd: Thêm dấu & sau dòng lệnh
+vd: ping -c 200 8.8.8.8 &
+
+ps -aux
+
+screen
+screen -ls
+screen -r id
+
+tmux
+
+ps -o pid, 
+
+tail -f (đoc xem log)
+
+# PIORITY
+
+fdisk -l 
+fdisk /dev/sdb
+
+#format disk
+mkfs -t ext4 /dev/sdb1
+mkfs -xfs /dev/sdb2
+
+#MO RONG O CUNG
+* note
+-poin can mount:   /dev/mapper/centos-root
+-   LV Path                /dev/centos/root
+-  VG Name                centos
+- PV Name               /dev/sda2
+
+lvdisplay
+
+fdisk -l
+1. fdisk /dev/sdd
+tạo physicle volume
+2. pvcreate /dve/sdd1
+vgcreate [Name] /dev/sdd1
+lvcreate 
+
+
+  git config --global user.email "nguyenthanhqt@gmail.com"
+  git config --global user.name "nguyenthanhqt"
