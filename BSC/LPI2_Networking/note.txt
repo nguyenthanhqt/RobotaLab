@@ -1,0 +1,54 @@
+Kiểm tra card
+ip a 
+ifconfig
+ifup
+ifdown
+
+nmcli
+
+Thông tin card mạng được lưu vào fiel config
+cd /etc/sysconfig/network-script/config 
+
+TYPE="Ethrenet"
+NAME="ens192"
+DEVICE="ens192"
+BOOTPROTO="none" /static/DHCP
+IPADDR="10.0.0.10"
+NETMASK="24"
+GETEWAY="10.0.0.1"
+DNS1="8.8.8.8'
+DNS2="1.1.1.1"
+
+save /chạy lệnh ifup ens192
+
+
+cấu hình cho ubutu
+http://netplan.io (tham khảo)
+
+network:
+  version: 2
+  renderer: networkd
+  ethrenet:
+    ens160:
+      addresses:
+        - 10.0.0.22/24
+      geteway: 10.0.0.1
+      nameserver:
+        addresses: 
+          - 8.8.8.8
+          - 1.1.1.1
+        search:
+          - "robutalab.local"
+
+
+netplan apply
+
+netplan try
+
+/etc/resolv.config 
+
+
+chuẩn bị
+cloauflare
+đang ký domain
+
