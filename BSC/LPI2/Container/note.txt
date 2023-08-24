@@ -1,0 +1,14 @@
+TANZU
+vm ward ESXI
+
+CONTAINER RUNTIME
+    Docker 
+    Containerd
+    Kubernets
+    Rkt Containerd
+    LXC/LXD
+
+    ====================================================================================
+    ssh thanhnb@103.89.85.42 -p 2281
+    ssh thanhnb@103.89.85.42 -p 2282
+    ssh thanhnb@103.89.85.42 -p 2283
